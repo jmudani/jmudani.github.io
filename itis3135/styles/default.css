@@ -48,9 +48,9 @@ a{
 {
    border-collapse: collapse;
    border: 1px solid black;
-   margin: 20px;
+   margin: auto;
 }
-.adnacedHeader, .advancedData 
+.advancedHeader, .advancedData 
 {
    border: 1px solid black;
    padding: .2em 1em .2em .5em;
