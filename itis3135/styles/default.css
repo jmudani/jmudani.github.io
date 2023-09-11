@@ -61,12 +61,12 @@ a{
     background-color:rgb(0,0,128);
     color: white;
 }
-.advancedRow:nth-child(odd) td 
+.advancedRow:nth-child(odd) .advancedData 
 {
     background-color: #777;
 
 }
-.advancedRow:nth-child(even) td 
+.advancedRow:nth-child(even) .advancedData 
 {
     background-color: #999;
 
