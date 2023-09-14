@@ -18,6 +18,9 @@ a
 {
     display: inline-block;
 }
+h2{
+    text-align: center;
+}
 /* Introduction */
 .mainlist
 {
@@ -26,6 +29,9 @@ a
 .sublist
 {
     list-style-type: circle;
+}
+.introHeading{
+    text-align: center;
 }
 .introImgCaption
 {
@@ -94,9 +100,6 @@ a
 }
 .formQuestions{
     font-size: 15px;
-}
-.formHeading{
-    text-align: center;
 }
 #name, #email, #number{
     width: 99%;
