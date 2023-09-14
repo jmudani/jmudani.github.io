@@ -1,4 +1,6 @@
-body {
+/* Common Between All Pages */ 
+body
+{
     background-image: url(https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2Vic2l0ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,43 +10,57 @@ body {
     font-size: 14px;
     color: black;
 }
-h3{
+footer
+{
     text-align: center;
 }
-.mainlist{
+a
+{
+    display: inline-block;
+}
+/* Introduction */
+.mainlist
+{
     list-style-type: closed circle;
 }
-.sublist{
+.sublist
+{
     list-style-type: circle;
 }
-.caption{
+.introImgCaption
+{
     text-align: center;
     font-style: italic;
-    
 }
-img{
+.introImg
+{
     width: 150px;
     height: auto;
     display: block;
     margin: auto;
 }
-.mainContract{
-    background-color: rgba(128, 128, 128, 0.5);
-    width:80%;
-    margin: auto;
-}
-.mainIntroduction{
+.mainIntroduction
+{
     background-color: rgba(255,255,255,0.3);
     width:60%;
     margin: auto;
 }
-footer{
+/* Contract */ 
+.mainContract
+{
+    background-color: rgba(128, 128, 128, 0.5);
+    width:80%;
+    margin: auto;
+}
+/* Table */ 
+.advancedTableHeading
+{
     text-align: center;
 }
-a{
-    display: inline-block;
+.tableCaption{
+    text-align: center;
 }
-.advanced
+.advancedTable
 {
    border-collapse: collapse;
    border: 1px solid black;
@@ -55,22 +71,52 @@ a{
    border: 1px solid black;
    padding: .2em 1em .2em .5em;
    text-align: center;
-   vertical-align: middle;
 }
-.advancedHeader{
+.advancedHeader
+{
     background-color:rgb(0,0,128);
     color: white;
 }
 .advancedRow:nth-child(odd) .advancedData 
 {
     background-color: #777;
-
 }
 .advancedRow:nth-child(even) .advancedData 
 {
     background-color: #999;
-
 }
-th{
-    background-color: #999;
+/* Form */
+.mainForm{
+    background-color: rgba(255,255,255,0.3);
+    width:80%;
+    margin: auto;
+    text-align: left;
+}
+.formQuestions{
+    font-size: 15px;
+}
+.formHeading{
+    text-align: center;
+}
+#name, #email, #number{
+    width: 99%;
+    color: blue;
+    font-family: 'Lucida Sans';
+    text-align: left;
+}
+.submitResetButton{
+    text-align: center;
+}
+button{
+    background-color: blue;
+    color: yellow;
+}
+#dropdown{
+    color: blue;
+    font-family: 'Lucida Sans';
+}
+textarea{
+    width: 99%;
+    color: blue;
+    font-family: 'Lucida Sans';
 }
