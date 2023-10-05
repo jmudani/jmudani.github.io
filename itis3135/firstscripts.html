@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Mudani's Jacked Mammoth || ITIS 3135 First Scripts</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2> ITIS 3135 First Scripts </h2>
+        <h3><div id="date&time"></div></h3>
+        <form>
+            <p class="formQuestions">Name:</p>
+            <input id = "name" type = "text" placeholder="Enter your name"/>
+            <p class="formQuestions">How are you feeling today?</p>
+            <input id = "feeling" type = "text" placeholder="Enter how you are feeling"/>
+            <p id = "greeting"></p>
+            <button onclick="greeting()">Submit</button>
+            <p class="formQuestions">Favorite Number to Polygon:</p>
+            <input id = "number" type = " text" placeholder="Enter your favorite number that is 1-10!"/>
+            <p></p>
+            <button onclick = "favoriteNumberToPolygon()">Get your polygon</button>
+            <p></p>
+        </form>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/defaultscripts.js"></script>
+</body>
+</html>

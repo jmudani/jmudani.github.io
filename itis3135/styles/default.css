@@ -119,7 +119,7 @@ h2{
 .formQuestions{
     font-size: 15px;
 }
-#name, #email, #number{
+#name, #email, #number, #feeling{
     width: 99%;
     color: blue;
     font-family: 'Lucida Sans';
