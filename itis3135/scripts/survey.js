@@ -45,17 +45,33 @@ function submit(event) {
     const data = new FormData(event.target);
     updateDOMFromFormData(data);
     event.target.style.display = 'none';
+
+    const introSection = document.getElementById('intro');
+    introSection.style.display = 'block';
+
+    event.target.reset();
 }
 
+
 function back() {
+    const form = document.getElementById('byoForm');
+    const introSection = document.getElementById('intro');
+    
+    form.style.display = 'block';
+    introSection.style.display = 'none';
+
     const courseList = document.getElementById('courses');
     courseList.innerHTML = '';
+}
 
-    const classNamesToUpdate = ['byoHeader2', 'byoHeader3', 'byoForm', 'intro'];
-    classNamesToUpdate.forEach(className => {
-        document.getElementById(className).className = className;
-    });
-    
+function deleteCourse(event) {
+    event.preventDefault();
+
+    const courseElements = document.getElementsByClassName('course');
+    if (courseElements.length > 0) {
+        const lastCourseElement = courseElements[courseElements.length - 1];
+        lastCourseElement.parentNode.removeChild(lastCourseElement);
+    }
 }
 
 function addCourse(event) {
@@ -77,9 +93,15 @@ function addCourse(event) {
         div.appendChild(input);
         div.className = 'course';
 
+        const deleteButton = document.createElement('button');
+        deleteButton.innerText = 'Delete Course';
+        deleteButton.addEventListener('click', deleteCourse);
+        div.appendChild(deleteButton);
+
         document.getElementById('inputContainer').appendChild(div);
     });
 }
+
 
 document.getElementById('byoForm').addEventListener('submit', submit);
 document.getElementById('back').addEventListener('click', back);
