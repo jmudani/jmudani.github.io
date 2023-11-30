@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Mudani's Jacked Mammoth || ITIS 3135 BYO Intro</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2 id="byoHeader2">BYO Intro</h2>
+        <h3 id="byoHeader3">Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+        <form id="byoForm" class="byoForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="Jai Mudani" required>
+            </div>
+            <div>
+                <label for="mascot">Mascot:</label>
+                <input type="text" id="mascot" name="mascot" value="Jacked Mammoth" required>
+            </div>
+            <div>
+                <label for="image">Image:</label>
+                <input id="image" name="image" type="file" accept=".jpg, .png" required>
+            </div>
+            <div>
+                <label for="caption1">Image Caption:</label>
+                <input type="text" id="caption1" name="caption1" value="Inside Joke (it's not even funny)" required>
+            </div>
+            <div>
+                <label for="professionalBackground1">Personal Background:</label>
+                <input type="text" id="professionalBackground1" name="professionalBackground1" value="I was born and raised in Charlotte, NC and have lived here all my life." required>
+            </div>
+            <div>
+                <label for="professionalBackground1">Professional Background:</label>
+                <input type="text" id="professionalBackground1" name="professionalBackground1" value="My parents own a small retail business and I have worked there and helped out with just about any aspect of a retail" required>
+            </div>
+            <div>
+                <label for="academicBackground1">Academic Background:</label>
+                <input type="text" id="academicBackground1" name="academicBackground1" value="I’m currently a Junior at UNC harlotte working towards my Bachelor of Science in Computer Science." required>
+            </div>
+            <div>
+                <label for="subjectBackground1">Background in this Subject:</label>
+                <input type="text" id="subjectBackground1" name="subjectBackground1" value="I have basically no background knowledge or experience in web design and development." required>
+            </div>
+            <div>
+                <label for="compPlatform1">Primary Computer Platform:</label>
+                <input type="text" id="compPlatform1" name="compPlatform1" value="MacBook Pro for school (Mac OS), Windows 11 Pc at home" required>
+            </div>
+            <div>
+                <label for="addCourse">Courses I'm Taking & Why:</label>
+                <button id="addCourse">Click to add a course</button>
+            </div>
+            <div id="inputContainer"></div>
+            <div>
+                <label for="funnyOrInteresting1">Funny/Interesting Item to Remember me by:</label>
+                <input type="text" id="funnyOrInteresting1" name="funnyOrInteresting1" value="I was the first person to be born in the U.S.A in my family.">
+            </div>
+            <div>
+                <label for="share1">I'd also like to Share:</label>
+                <input type="text" id="share1" name="share1" value="My main hobbies/free time enjoyments are chilling with my friends">
+            </div>
+            <div>
+                <label for="check">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
+                <input type="checkbox" id="check" name="check" required>
+            </div>
+            <div>
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+        <div class="byoNew" id="intro">
+            <h2>Introduction Demo Page:</h2>
+            <figure>
+                <img id="byoImage" alt="me" src="./">
+                <figcaption id="caption2"></figcaption>
+            </figure>
+            <ul>
+                <li><b>Personal Background: </b><span id="personalBackground2"></span></li>
+                <li><b>Professional Background: </b><span id="professionalBackground2"></span></li>
+                <li><b>Academic Background: </b><span id="academicBackground2"></span></li>
+                <li><b>Background in this Subject: </b><span id="subjectBackground2"></span></li>
+                <li><b>Primary Computer Platform: </b><span id="compPlatform2"></span></li>
+                <li><b>Courses I'm Taking & Why:</b>
+                    <ul id="courses"></ul>
+                </li>
+                <li><b>Funny/Interesting Item to Remember me by: </b><span id="funnyOrInteresting2"></span></li>
+                <li><b>I'd also like to Share: </b><span id="share2"></span></li>
+            </ul>
+            <button id="back">Back to form</button>
+        </div>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/survey.js"></script>
+    <script src="scripts/include.js"></script>
+</body>
+</html>
