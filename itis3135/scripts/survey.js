@@ -44,6 +44,7 @@ function submit(event) {
     event.preventDefault();
     const data = new FormData(event.target);
     updateDOMFromFormData(data);
+    event.target.style.display = 'none';
 }
 
 function back() {
@@ -54,6 +55,7 @@ function back() {
     classNamesToUpdate.forEach(className => {
         document.getElementById(className).className = className;
     });
+    
 }
 
 function addCourse(event) {
