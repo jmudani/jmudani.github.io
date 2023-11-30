@@ -151,5 +151,5 @@ textarea{
 }
 
 #byoImage {
-    display: inline-block; /* Ensures the image is treated as an inline block */
+    display: inline-block;
 }
