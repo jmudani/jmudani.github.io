@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Mudani's Jacked Mammoth || ITIS 3135 Calculator Try</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <h2> ITIS 3135 Calculator </h2>
+    <main>
+        <div id="calculator">
+            <input type="text" id="calculatorDisplay">
+            <div>
+                <button class="calculatorButton" onclick="appendToDisplay('7')">7</button>
+                <button class="calculatorButton" onclick="appendToDisplay('4')">4</button>
+                <button class="calculatorButton" onclick="appendToDisplay('1')">1</button>
+                <button class="calculatorButton" onclick="appendToDisplay('0')">0</button>
+            </div>
+            <div>
+                <button class="calculatorButton" onclick="appendToDisplay('8')">8</button>
+                <button class="calculatorButton" onclick="appendToDisplay('5')">5</button>
+                <button class="calculatorButton" onclick="appendToDisplay('2')">2</button>
+                <button class="calculatorButton" onclick="clearDisplay()">C</button>
+            </div>
+            <div>
+                <button class="calculatorButton" onclick="appendToDisplay('9')">9</button>
+                <button class="calculatorButton" onclick="appendToDisplay('6')">6</button>
+                <button class="calculatorButton" onclick="appendToDisplay('3')">3</button>
+                <button class="calculatorButton" onclick="calculateResult()">=</button>
+            </div>
+            <div>
+                <button class="calculatorButton" onclick="appendToDisplay('/')">/</button>
+                <button class="calculatorButton" onclick="appendToDisplay('*')">x</button>
+                <button class="calculatorButton" onclick="appendToDisplay('-')">-</button>
+                <button class="calculatorButton" onclick="appendToDisplay('+')">+</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/calculator_try.js"></script>
+</body>
+</html>
