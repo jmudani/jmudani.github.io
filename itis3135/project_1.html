@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Mudani's Jacked Mammoth || ITIS 3135 Project 1</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2> ITIS 3135 Project 1 </h2>
+        <section>
+            <h3>Project Overview</h3>
+            <ul>
+                <li>My application is a website for my clients men's clothing business where they can course through the clients products and shop online.</li>
+                <li>The intended user is anyone who is interested in buying men's urban clothing whether it be them or for someone else.</li>
+                <li>There will be home page, product page, and checkout page, all the main stuff for any clothing website that allows you to browse and shop</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Client Information</h3>
+            <ul>
+                <li>Name of the Client: Pushpraj Mudani</li>
+                <li>Business Name: D's Hi Fashion</li>
+                <li>Email: jambellc@gmail.com</li>
+                <li>Phone Number: 704-225-8060</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Wireframe and Site Map:</h3>
+            <img class="wireframeImg" src=images/wireframe.png alt="Project 1 Wireframe">
+            <figcaption id="wireframeSiteMapCaption">Wireframe</figcaption>
+            <img class="siteMapImg" src=images/siteMap.png alt="Project 1 Site Map">
+            <figcaption id="wireframeSiteMapCaption">Site Map</figcaption>
+        </section>
+        <section>
+            <h3>Page Design:</h3>
+            <p>The main pages that I will be implementing are the home page, products, product details, about us, shopping cart, and checkout. 
+            The rest of the pages shown in the site map are just different versions of the same page technically but I just wanted to include it for my own sake</p>
+            <div id="home">
+                <h4>Home Page</h4>
+                <ul>
+                    <li>Purpose: Introduce the business and showcase featured products.</li>
+                    <li>Audience: Customers</li>
+                    <li>Content: Welcome message, featured products, promotions.</li>
+                    <li>Interactivity: Image sliders, quick view options.</li>
+                    <li>Asking User to enter data: No</li>
+                    <li>Contain buttons, hyperlinks, or dropdowns: Yes</li>
+                    <li>Special Notes: Keep it visually appealing.</li>
+                </ul>
+            </div>
+    
+            <div id="products">
+                <h4>Products</h4>
+                <ul>
+                    <li>Purpose: Display a variety of clothing products.</li>
+                    <li>Audience: Customers.</li>
+                    <li>Content: Grid of product images with brief descriptions.</li>
+                    <li>Asking User to enter data: No</li>
+                    <li>Contain buttons, hyperlinks, or dropdowns: Yes</li>
+                    <li>Interactivity: Sorting and filtering options.</li>
+                    <li>Special Notes: Ensure a clear call-to-action for each product.</li>
+                </ul>
+            </div>
+    
+            <div id="product-details">
+                <h4>Product Details</h4>
+                <ul>
+                    <li>Purpose: Provide detailed information about a specific product.</li>
+                    <li>Audience: Customers.</li>
+                    <li>Content: Large product image, detailed description, price.</li>
+                    <li>Asking User to enter data: No</li>
+                    <li>Contain buttons, hyperlinks, or dropdowns: Yes</li>
+                    <li>Interactivity: Add to cart button.</li>
+                    <li>Special Notes: Include customer reviews if available.</li>
+                </ul>
+            </div>
+
+            <div id="aboutus">
+                <h4>About Us</h4>
+                <ul>
+                    <li>Purpose: Inform customers about what the business is and how to contact them.</li>
+                    <li>Audience: Customers.</li>
+                    <li>Content: little description about who the client is, contact info, locations, and other business related information.</li>
+                    <li>Asking User to enter data: No</li>
+                    <li>Contain buttons, hyperlinks, or dropdowns: Yes</li>
+                    <li>Interactivity: not much because more for information</li>
+                    <li>Special Notes: Try to talk about the family business to connect with customers</li>
+                </ul>
+            </div>
+
+            <div id="cart">
+                <h4>Shopping Cart</h4>
+                <ul>
+                    <li>Purpose: Summarize selected items for purchase.</li>
+                    <li>Audience: Customers.</li>
+                    <li>Content: List of selected items, total price.</li>
+                    <li>Asking User to enter data: Yes</li>
+                    <li>Data Validation: Yes</li>
+                    <li>Contain buttons, hyperlinks, or dropdowns: Yes</li>
+                    <li>Interactivity: Remove items, proceed to checkout.</li>
+                    <li>Special Notes: Ensure clear navigation back to product pages.</li>
+                </ul>
+            </div>
+    
+            <div id="checkout">
+                <h4>Checkout</h4>
+                <ul>
+                    <li>Purpose: Collect shipping details and payment information.</li>
+                    <li>Audience: Customers.</li>
+                    <li>Content: Form fields for shipping, payment options.</li>
+                    <li>Asking User to enter data: Yes</li>
+                    <li>Data Validation: Yes</li>
+                    <li>Contain buttons, hyperlinks, or dropdowns: Yes</li>
+                    <li>Interactivity: Form validation, confirmation message.</li>
+                    <li>Special Notes: Provide a clear summary before finalizing the purchase.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div id="dynamic-functionality">
+                <h3>Dynamic Functionality</h3>
+                <ul>
+                    <li>Navigation Bar and Header/Footer: Across all pages</li>
+                    <li>Form Validation: Ensure that user input in checkout forms is valid.</li>
+                    <li>Interactive Images: Zoom or additional views for product images.</li>
+                    <li>Shopping Cart Updates: Dynamically update the cart without refreshing the page.</li>
+                    <li>AJAX for Loading Products: Use AJAX to load product listings without refreshing the entire page.</li>
+                </ul>
+            </div>
+        </section>
+    
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/include.js"></script>
+</body>
+</html>

@@ -153,3 +153,23 @@ textarea{
 #byoImage {
     display: inline-block;
 }
+/* Project 1 */
+.wireframeImg
+{
+    width: 600px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+#wireframeSiteMapCaption{
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+}
+.siteMapImg
+{
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
