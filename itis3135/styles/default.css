@@ -39,6 +39,20 @@ a:link, a:visited {
 h2{
     text-align: center;
 }
+@media (min-width: 576px) {
+    body {
+      margin: 10px; 
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    header, footer {
+      padding: 10px;
+    }
+}
 /* Introduction */
 .mainlist
 {
