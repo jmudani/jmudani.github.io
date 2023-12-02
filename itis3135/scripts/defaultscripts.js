@@ -37,6 +37,10 @@ function favoriteNumberToPolygon()
 {
     let number = document.getElementById("number").value;
 
+    number = Math.round(Math.abs(number));
+
+    if (number >= 1 && number <= 10) {
+
     if (number == 1){
         number = Math.abs(number);
         alert("Henagon");
@@ -78,6 +82,32 @@ function favoriteNumberToPolygon()
         alert("Decagon");
     }
     else{
-        alert("Please enter a number 1-10!")
+        alert("Error has occurred!")
     }
+}
+else {
+    alert("Please enter a valid number between 1 and 10!");
+}
+}
+
+function roarLikeMammoth(){
+    alert("Mammoth: Rooooooaaaar!");
+}
+
+function totalGrass(){
+    const number1 = prompt("How manu pieces of grass did the mammoth find on the first trip:");
+    const number2 = prompt("How manu pieces of grass did the mammoth find on the second trip:");
+    const sum = parseInt(number1) + parseInt(number2);
+    alert(`The mammoth found a total of ${sum} pieces of grass for dinner today.`);
+}
+
+function nameMammoth(){
+    const name = prompt("What would you like to name your mammoth?")
+    alert(`${name} loves his new name!`);
+}
+
+function buyMammoth(){
+    const number1 = prompt("A Mammoth costs $10,000, how many would you like to buy?");
+    const total = parseInt(number1) * 10000;
+    alert(`Your total is $${total}, keep good care of our Mammoth's!`);
 }
