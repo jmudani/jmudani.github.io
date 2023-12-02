@@ -14,7 +14,8 @@
     <main>
         <div id="calculator">
             <input type="text" id="calculatorDisplay">
-            <div>
+            <!-- This is the calculator code before Calculator Part 2 - Separation of Concerns-->
+            <!--<div>
                 <button class="calculatorButton" onclick="appendToDisplay('7')">7</button>
                 <button class="calculatorButton" onclick="appendToDisplay('4')">4</button>
                 <button class="calculatorButton" onclick="appendToDisplay('1')">1</button>
@@ -37,6 +38,32 @@
                 <button class="calculatorButton" onclick="appendToDisplay('*')">x</button>
                 <button class="calculatorButton" onclick="appendToDisplay('-')">-</button>
                 <button class="calculatorButton" onclick="appendToDisplay('+')">+</button>
+            </div>-->
+
+            <!-- This is the calculator code after Calculator Part 2 - Separation of Concerns-->
+            <div>
+                <button class="calculatorButton">7</button>
+                <button class="calculatorButton">4</button>
+                <button class="calculatorButton">1</button>
+                <button class="calculatorButton">0</button>
+            </div>
+            <div>
+                <button class="calculatorButton">8</button>
+                <button class="calculatorButton">5</button>
+                <button class="calculatorButton">2</button>
+                <button class="calculatorButton">C</button>
+            </div>
+            <div>
+                <button class="calculatorButton">9</button>
+                <button class="calculatorButton">6</button>
+                <button class="calculatorButton">3</button>
+                <button class="calculatorButton">=</button>
+            </div>
+            <div>
+                <button class="calculatorButton">/</button>
+                <button class="calculatorButton">*</button>
+                <button class="calculatorButton">-</button>
+                <button class="calculatorButton">+</button>
             </div>
         </div>
     </main>
