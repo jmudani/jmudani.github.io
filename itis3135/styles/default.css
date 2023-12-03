@@ -135,7 +135,7 @@ h2{
 }
 #name, #email, #number, #feeling, #mascot, #caption1, #personalBackground1, 
 #professionalBackground1, #academicBackground1, #subjectBackground1, #compPlatform1,
-#funnyOrInteresting1, #share1{
+#funnyOrInteresting1, #share1, #salary, #nameDropdown{
     width: 99%;
     color: blue;
     font-family: 'Lucida Sans';
@@ -227,3 +227,24 @@ textarea{
   .calculatorButton:hover {
     background-color: #333;
   }
+/* Arrays */
+#salaryTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #999;
+}
+#salaryTable th {
+    background-color: #777;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+#salaryTable td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+#salaryTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

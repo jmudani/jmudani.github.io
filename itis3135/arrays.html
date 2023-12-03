@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Mudani's Jacked Mammoth || ITIS 3135 Arrays</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2> ITIS 3135 Arrays </h2>
+        
+        <form>
+            <label for="nameDropdown">Name Dropdown:</label>
+            <select type="Dropdown"id="nameDropdown" onchange="updateNameDropdown()">
+            </select>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="salary">Salary:</label>
+            <input type="text" id="salary" required>
+            <button type="button" id="addButton" onclick="addSalary()">Add Salary</button>
+            <button type="button" onclick="displayResults()">Results</button>
+            <button type="button" onclick="displaySalary()">Salary Table</button>
+        </form>
+
+        <h3>Results</h3>
+        <div id="results"></div>
+        
+        <h3>Salary Table</h3>
+        <table id="salaryTable"></table>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/arrays.js"></script>
+</body>
+</html>
