@@ -248,3 +248,7 @@ textarea{
 #salaryTable tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
+/* Interactive Drawing*/
+.canvas{
+    text-align: center;
+}
