@@ -199,9 +199,8 @@ textarea{
     padding: 10px;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
-  }
-
-  #calculatorDisplay {
+}
+#calculatorDisplay {
     background-color: #333; 
     font-size: 20px;
     text-align: right;
@@ -210,9 +209,8 @@ textarea{
     border: 1px solid #222;
     border-radius: 5px;
     grid-column: span 4;
-  }
-  
-  .calculatorButton {
+}
+.calculatorButton {
     background-color: #999; 
     color: #fff;
     border: 1px solid #0000FF;
@@ -222,11 +220,10 @@ textarea{
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .calculatorButton:hover {
+}
+.calculatorButton:hover {
     background-color: #333;
-  }
+}
 /* Arrays */
 #salaryTable {
     width: 100%;
@@ -251,4 +248,51 @@ textarea{
 /* Interactive Drawing*/
 .canvas{
     text-align: center;
+}
+/* Slideshow */
+.slideshowMain {
+    position: relative;
+}
+.slides {
+    display: none;
+}
+.cursor {
+    cursor: pointer;
+} 
+.prev,
+.next {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 20px;
+    margin-top: -50px;
+    color: #777;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.caption-slideshowMain {
+    text-align: center;
+    background-color: #777;
+    padding: 5px;
+    color: black;
+}
+.displays:after {
+    content: "";
+    display: table;
+    clear: both;
+} 
+.display {
+    float: left;
+    width: 11%;
+}
+.demo {
+    opacity: 0.5;
+}
+.active,
+.demo:hover {
+    opacity: 1;
 }
