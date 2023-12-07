@@ -253,12 +253,27 @@ textarea{
 .slideshowMain {
     position: relative;
 }
+.caption-slideshowMain {
+    text-align: center;
+    background-color: #777;
+    padding: 5px;
+    color: black;
+}
 .slides {
     display: none;
 }
+.displays:after {
+    content: "";
+    display: table;
+    clear: both;
+} 
+.display {
+    float: left;
+    width: 11%;
+}
 .cursor {
     cursor: pointer;
-} 
+}
 .prev,
 .next {
     font-size: 30px;
@@ -273,21 +288,6 @@ textarea{
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
-}
-.caption-slideshowMain {
-    text-align: center;
-    background-color: #777;
-    padding: 5px;
-    color: black;
-}
-.displays:after {
-    content: "";
-    display: table;
-    clear: both;
-} 
-.display {
-    float: left;
-    width: 11%;
 }
 .demo {
     opacity: 0.5;
