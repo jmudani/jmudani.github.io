@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Mudani's Jacked Mammoth || ITIS 3135 Hobby</title>
+    <script>
+        function hideAll()
+        {
+            document.getElementById('home').style.display = "none";
+            document.getElementById('aboutMe').style.display = "none";
+            document.getElementById('seasons').style.display = "none";
+            document.getElementById('locations').style.display = "none";
+            document.getElementById('rules').style.display = "none";
+            document.getElementById('impact').style.display = "none";
+        }
+    
+        function showElement(id)
+        {
+            let element = document.getElementById(id);
+            element.style.display = "block";
+        }
+    
+        function setVisible(id)
+        {
+            hideAll();
+            showElement(id);
+        }
+    </script>
+    <style>
+        body
+        {
+            background-image: url(images/background.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-family: Calibri;
+            padding: 70px;
+            font-size: 14px;
+            color: black;
+        }
+        .mainHobby
+        {
+            background-color: rgba(255,255,255,0.3);
+            margin: auto;
+        }
+        footer
+        {
+            text-align: center;
+        }
+        a
+        {
+            display: inline-block;
+        }
+        a:link{
+            color:grey;
+        }
+        a:visited{
+            color:grey;
+        }
+        a:hover{
+            color:blue;
+        }
+        a:focus{
+            color:red;
+        }
+        a:active{
+            color:red;
+        }
+        a:link, a:visited {
+            text-decoration: none;
+        }
+        @media (min-width: 576px) {
+            body {
+            margin: 10px; 
+            }
+        
+            img {
+            max-width: 100%;
+            height: auto;
+            }
+        
+            header, footer {
+            padding: 10px;
+            }
+        }
+        section{
+            display: none;
+        }
+        #hobbyNav{
+            text-align: center;
+        }
+        #home{
+            display: block;
+            text-align: center;
+        }
+        #aboutMe, #seasons, #locations, #rules, #impact{
+            text-align: center;
+        }
+        .hobbyHeading{
+            text-align: center;
+        }
+        .hobbyInfo
+        {
+            text-align: justify;
+            font-size: 120%;
+        }
+        .hobbyPadding
+        {
+            padding: 1%;
+        }
+        #hobbyImgCaption{
+            text-align: center;
+        }
+        img{
+            height: 400px;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Basketball</h1>
+    <header>
+        <nav id = hobbyNav>
+            <p>
+            <a href="javascript:setVisible('home')" onclick = "preventDefault">Home</a> |
+            <a href="javascript:setVisible('aboutMe')" onclick = "preventDefault">About Me</a> |
+            <a href="javascript:setVisible('seasons')" onclick = "preventDefault">Seasons</a> |
+            <a href="javascript:setVisible('locations')" onclick = "preventDefault">Locations</a> |
+            <a href="javascript:setVisible('rules')" onclick = "preventDefault">Rules</a> |
+            <a href="javascript:setVisible('impact')" onclick = "preventDefault">Impact</a>
+            </p>
+        </nav>
+    </header>
+    <main class="mainHobby">
+
+        <section id="home">
+
+            <h2 class="hobbyHeading">Home</h2>
+
+            <div class="hobbyPadding">
+
+                <p class="hobbyInfo">
+                    Welcome to the thrilling world of basketball, where the sound of sneakers squeaking on the hardwood floor and the bounce of the ball echo through the arenas of competition. As one of the most dynamic and widely followed sports globally, basketball has captured the hearts of fans with its fast-paced action, incredible athleticism, and nail-biting suspense. Whether you're a seasoned enthusiast or a newcomer eager to explore the world of the game, this basketball information page is your gateway to the sport of basketball.
+                </p>
+                <p class="hobbyInfo">
+                    Basketball, invented by Dr. James Naismith in December 1891, has evolved into a global phenomenon that transcends cultural boundaries. Played and celebrated in every corner of the world, the game has given rise to legendary players, iconic teams, and unforgettable moments that have etched their place in sporting history. From the iconic slam dunks to precision three-pointers, each match unfolds the unique playstyle of the athletes that play it.
+                </p>
+                <p class="hobbyInfo">
+                    This information page aims to be your go-to resource for all things basketball, covering the fundamental rules, player positions, key strategies, and the excitement of major leagues and tournaments. Whether you're interested in the NBA, NCAA, FIBA, or any other league, join us on this journey to explore the nuances of basketball and gain a deeper appreciation for the sport that continues to inspire millions around the globe.
+                </p>
+            </div>
+            
+            <figure>
+                <img src="images/basketballOlympics.jpeg" alt="Playing Basketball">
+                <figcaption id="hobbyImgCaption">Olympics</figcaption>
+            </figure>
+
+        </section>
+
+        <section id="aboutMe">
+
+            <h2 class="hobbyHeading">About Me</h2>
+
+            <div class="hobbyPadding">
+
+                <p class="hobbyInfo">Hello, my name is Jai Mudani. I am a junior at UNC Charlotte and I'm currently pursuing a degree in Computer Science with a concentration in Software Engineering.</p>
+                
+                <br>
+
+                <p class="hobbyInfo">I have played basketball since I was very little, my dad bought me a basketball hoop that we put up on our driveway and it has been my favorite hobby ever since. 
+                    To me its not just a sport, its an art, and not just for me but to millions of people as well. I tried taking sort of a basketball training camp and playing for a team because everyone always said I would be good at it since I was always tall for my age
+                    but it never worked out and I just sort of left it as a hobby. I keep up with the NBA (National Basketball League) regularly and I try to go to some of my colleges (UNC charlotte) games but as you can see below, we could use some more support!
+                </p>
+
+            </div>
+
+            <figure>
+                <img src="images/unccBasketball.jpeg" alt = "Uncc Basketball Game">
+                <figcaption id="hobbyImgCaption">At a random UNC Charlotte basketball game</figcaption>
+            </figure>
+
+        </section>
+
+        <section id="seasons">
+
+            <h2 class="hobbyHeading">Seasons</h2>
+
+            <figure>
+                <img src="images/calender.png" alt="Calender">
+                <figcaption id="hobbyImgCaption">Calender</figcaption>
+            </figure>
+
+            <div class="hobbyPadding">
+
+                <p class="hobbyInfo">
+                    Basketball seasons typically follow a structured format, with professional leagues, college conferences, and high school associations all having their own variations. In the professional realm, such as the NBA (National Basketball Association) in the United States, a typical basketball season spans several months, usually starting in October and running through April. The season is divided into two main parts: the regular season and the playoffs.
+                </p>
+                <p class="hobbyInfo">
+                    During the regular season, teams play a predetermined number of games against other teams in the league. The schedule is organized to ensure that each team faces a diverse range of opponents, both home and away. Teams earn points based on their performance, with wins contributing to their standings in the league. The regular season is crucial for determining which teams will advance to the playoffs, with the top-performing teams securing a spot in the postseason.
+                </p>
+                <p class="hobbyInfo">
+                    The playoffs are a knockout-style tournament where teams compete in a series of elimination rounds to determine the ultimate champion. The format usually involves a best-of-seven series in each round, with the winners advancing to the next stage until the two conference champions face off in the championship series (such as the NBA Finals). The team that secures the required number of victories in the championship series is crowned the overall winner of the season. This structured format adds excitement and intensity to the basketball season with back-to-back elimination games that end with the current best teams fighting to be called the best.
+                </p>
+            </div>
+            
+        </section>
+
+        <section id="locations">
+
+            <h2 class="hobbyHeading">Locations/Environment</h2>
+
+            <div class="hobbyPadding">
+
+                <p class="hobbyInfo">
+                    Basketball is played in a variety of settings, ranging from professional arenas to local community courts. At the professional level, major leagues like the NBA in the United States, the EuroLeague in Europe, and various other national leagues worldwide utilize state-of-the-art indoor arenas. These venues are equipped with high-capacity seating, advanced lighting, and broadcasting facilities to accommodate large audiences both in person and through televised broadcasts. Iconic arenas, such as Madison Square Garden in New York City or the Staples Center in Los Angeles, serve as hallowed grounds for basketball enthusiasts and host numerous games throughout a season.
+                </p>
+                <p class="hobbyInfo">
+                    On the collegiate level, basketball is played in university arenas and campus gyms. College basketball enjoys widespread popularity, especially during events like March Madness in the United States, where games take place in various locations across the country. High school basketball is typically played in school gyms, and community centers also play a crucial role in providing spaces for local basketball leagues, pickup games, and youth development programs.
+                </p>
+                <p class="hobbyInfo">
+                    Beyond formalized leagues and competitions, public outdoor courts are widespread and form an integral part of the street basketball culture. Parks, playgrounds, and open spaces in urban and suburban areas often feature basketball hoops, allowing individuals to engage in casual games, hone their skills, and foster a sense of community. The versatility of basketball courts in terms of location and accessibility contributes to the sport's global appeal, making it a common sight in neighborhoods, schools, and public spaces around the world.
+                </p>
+            </div>
+            
+            <figure>
+                <img src="images/stadium.jpeg" alt="Indoor Stadium">
+                <figcaption id="hobbyImgCaption">Indoor Basketball Stadium</figcaption>
+                <img src="images/stadium2.webp" alt="Outdoor Stadium">
+                <figcaption id="hobbyImgCaption">Outdoor Basketball Court</figcaption>
+            </figure>
+
+        </section>
+
+        <section id="rules">
+
+            <h2 class="hobbyHeading">Rules</h2>
+
+            <div class="hobbyPadding">
+
+                <p class="hobbyInfo">
+                    Basketball is a fast-paced sport played between two teams, each consisting of five players. The objective is to score points by shooting a ball through the opponent's basket, which is mounted 10 feet above the floor. The game begins with a jump ball at center court, where the referee tosses the ball into the air, and players from each team try to gain possession. The team with the ball is on offense, while the other team is on defense, aiming to prevent the offensive team from scoring.
+                </p>
+                <p class="hobbyInfo">
+                    To score, players must shoot the ball into the opponent's basket. A field goal made from outside the three-point arc earns three points, while shots made inside the arc count for two points. Free throws, awarded after certain fouls, are worth one point each. The game is played in quarters, with professional leagues typically having four quarters lasting 12 minutes each.
+                </p>
+                <p class="hobbyInfo">
+                    Basketball involves constant movement, passing, and strategic plays. Players can dribble the ball (bounce it on the floor) while moving, but they are not allowed to run holding the ball without dribbling. The defensive team aims to block shots, steal the ball, or force turnovers to regain possession. Physical contact is regulated by the rules, and fouls are called for illegal physical conduct, resulting in free throws or possession for the opposing team.
+                </p>
+                <p class="hobbyInfo">
+                    The shot clock is a critical element in basketball, dictating the maximum time a team has to attempt a shot. If a team fails to make a shot within the allotted time, the opposing team gains possession. The team with the highest score at the end of the game is declared the winner. The fast-paced nature, skillful maneuvers, and teamwork required make basketball an exciting and widely celebrated sport globally.
+                </p>
+            </div>
+            
+            <figure>
+                <img src="images/rules.webp" alt="Refree Starting Game">
+                <figcaption id="hobbyImgCaption">Refree tossing the ball to start the game</figcaption>
+            </figure>
+
+        </section>
+
+        <section id="impact">
+
+            <h2 class="hobbyHeading">Impact</h2>
+
+            <figure>
+                <img src="images/inspirational.jpeg" alt="Kobe inspiring youth">
+                <figcaption id="hobbyImgCaption">NBA star Kobe Bryant inspiring youth</figcaption>
+            </figure>
+
+            <div class="hobbyPadding">
+
+                <p class="hobbyInfo">
+                    Basketball has left an incredible mark on the world. International competitions, such as the FIBA Basketball World Cup and the Olympic basketball tournament, bring together athletes from diverse backgrounds, fostering a sense of camaraderie and mutual respect on a global scale. The sport serves as a universal language that unites people across continents, promoting cultural exchange and understanding.
+                </p>
+                <p class="hobbyInfo">
+                    Beyond its role as a source of entertainment, basketball has become a vehicle for social change and empowerment. Many basketball players, especially those in high-profile leagues like the NBA, leverage their influence to address social issues, advocate for equality, and contribute to charitable causes. Players serve as role models, inspiring individuals around the world to pursue their dreams, overcome adversity, and use their platforms for positive change.
+                </p>
+                <p class="hobbyInfo">
+                    In the realm of popular culture, basketball has influenced fashion, music, and art, shaping the cultural landscape in profound ways. Iconic players, memorable moments, and the vibrant energy of the game have become ingrained in the collective consciousness. The global impact of basketball extends far beyond the court, making it not only a sport but a force that connects people, promotes positive values, and leaves a lasting legacy on the world stage.
+                </p>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <a>Page Designed by</a>
+        <a href="mudanienterprises.com/index.html">Mudani Enterprises© 2023,</a>
+    
+        <p></p>
+        <a href="https://validator.w3.org/check?uri=referer">
+        <img style="border:0;width:88px;height:31px"
+        src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!" target="_blank">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
+            CSS!" target="_blank">
+        </a>
+    </footer>
+</body>
+</html>
