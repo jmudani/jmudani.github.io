@@ -181,3 +181,6 @@ textarea{
     color: olive;
     font-family: 'Lucida Sans';
 }
+#rangesliderValue{
+    text-align: center;
+}
