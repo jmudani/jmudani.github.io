@@ -32,7 +32,7 @@ $(function() {
         });
 
         // Example functionality to demonstrate programmatic value changes
-        $document.on('click', '#js-example-change-value button', function(e) {
+        $document.on('click', '#rangesliderValue', function(e) {
             var $inputRange = $(selector, e.target.parentNode);
             var value = $('input[type="number"]', e.target.parentNode)[0].value;
 
