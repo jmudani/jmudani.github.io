@@ -1,0 +1,184 @@
+/*Default*/
+body
+{
+    background-color: orange;
+    background-size: cover;
+    background-position: center;
+    font-family: Calibri;
+    padding: 70px;
+    font-size: 14px;
+    color: #FFFDD0;
+    text-align: center;
+}
+a:link{
+    color:black;
+}
+a:visited{
+    color:black;
+}
+a:hover{
+    color:grey;
+}
+a:focus{
+    color:blue;
+}
+a:active{
+    color:blue;
+}
+a:link, a:visited {
+    text-decoration: none;
+}
+/*Shared between some pages*/
+.nbaInfo, .homeInfo, .trainingInfo, .historyInfo, .aboutInfo
+{
+    margin: auto;
+    position: relative;
+    border: 1px solid #011e5ce7;
+    border-radius: 15px;
+    background-color: black;
+    box-shadow: 0px 0px 10px #cccccca2;
+    text-align: justify, center;
+    padding-top: 10px;
+}
+.historyInfo, .nbaInfo{
+    width: 70%;
+}
+.homeInfo, .trainingInfo, .aboutInfo{
+    width: 55%;
+}
+.aboutInfo p, .historyInfo p, .nbaInfo p
+{
+    font-size: larger;
+    padding: 1%;
+}
+/*Home*/
+.homeInfo
+{
+    padding: 1%;
+    text-align: justify;
+    font-size: larger;
+}
+.homeSlider
+{
+    margin: auto;
+    width: 525px;
+    height: 425px;
+    border: 1px solid #4f81efe7;
+    border-radius: 15px;
+    background-color: #83aacc;
+    box-shadow: 0px 0px 10px #cccccca2;
+    padding-top: 10px;
+}
+/*NBA*/
+.nbaSSHeader3{
+    background-color: #FFFDD0;
+}
+.ssNba {
+    position: relative;
+}
+.caption-ssNba {
+    text-align: center;
+    background-color: #FFFDD0;
+    padding: 5px;
+    color: black;
+}
+.slidesNba {
+    display: none;
+    text-align: center;
+}
+.displays:after {
+    content: "";
+    display: table;
+    clear: both;
+} 
+.display {
+    float: left;
+    width: 16.6%;
+}
+.cursor {
+    cursor: pointer;
+    text-align: center;
+}
+.prev,
+.next {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -100px;
+    margin-left: -350px;
+    margin-right: 290px;
+    color: black;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.demo {
+    opacity: 0.5;
+}
+.active,
+.demo:hover {
+    opacity: 1;
+}
+.ssImg{
+    width: 650px;
+    height: 550px;
+}
+/*About*/
+.row {
+    display: flex;
+}
+.column {
+    flex: 50%;
+    padding: 5px;
+}
+/*Training*/
+.fundamentalSection, .advancedSection, .trainingSection{
+    text-align: left;
+    margin-left: 28%;
+}
+#acc .accordion {
+    padding: 14px;
+    cursor: pointer;
+    background-color: gray;
+    border: 1px solid #011e5ce7;
+    text-align: center;
+    outline: none;
+    transition: 0.5s;
+    font-size: large
+}
+/*Survey*/
+.mainForm{
+    background-color: black;
+    width:60%;
+    margin: auto;
+    text-align: left;
+    padding: 5%;
+}
+.formQuestions{
+    font-size: 15px;
+}
+#name, #email, #number {
+    width: 99%;
+    color: olive;
+    font-family: 'Lucida Sans';
+    text-align: left;
+}
+.submitResetButton{
+    text-align: center;
+}
+button{
+    background-color: grey;
+    color: black;
+}
+#dropdown{
+    color: grey;
+    font-family: 'Lucida Sans';
+}
+textarea{
+    width: 99%;
+    color: olive;
+    font-family: 'Lucida Sans';
+}

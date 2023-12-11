@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Mudani's Jacked Mammoth || ITIS || Client Project Survey</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/plugins/rangeslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="scripts/plugins/rangeslider.min.js"></script>
+    <script src="scripts/rangeslider.js"></script>
+    <script src="scripts/rangesliderSurvey.js"></script>
+</head>
+<body>
+    <header>
+      <div data-include="components/header.html"></div>
+    </header>
+    <hr>
+    <main class="mainForm">
+        <h2 style="text-align: center;">Survey</h2>
+        <form id= "html-form">
+            <div class="menu">
+              <div>
+                <p class="formQuestions">Name:</p>
+                <input id="name" type="text" required placeholder="Enter your name"/>
+              </div>
+            
+              <div>
+                <p class="formQuestions">Email:</p>
+                <input id="email" type="email" required placeholder="Enter your email"/>
+              </div>
+            
+              <div>
+                <p class="formQuestions">Phone Number:</p>
+                <input id="number" type="number" required placeholder="Enter your number" min="0"/>
+              </div>
+            
+              <p class="formQuestions">Which option best describes your current experience and knowledge regarding basketball?</p>
+              <select id="dropdown">
+                <option selected disabled >Choose here</option>
+                <option>None</option>
+                <option>Very Little</option>
+                <option>Decent Amount</option>
+                <option>A lot</option>
+                <option>Expert</option>
+              </select>
+            
+              <p class="formQuestions">How likely (0-10) would you recommend Hoop Harmony to a friend?</p>
+              <div id="js-example-change-value button">
+                <input type="range" min="0" max="10" data-rangeslider>
+                <output></output>
+              </div>
+            
+              <p class="formQuestions">What would you like to see improved on our website?</p>
+
+              <label><input type="checkbox" value="checkbox" name="checkbox"/>Layout</label>
+              <br>
+              <label><input type="checkbox"value="checkbox" name="checkbox"/>Design</label>
+              <br>
+              <label><input type="checkbox" value="checkbox" name="checkbox"/>Content</label>
+
+              <p class="formQuestions">Any comments or suggestions?</p>
+              <textarea>
+              </textarea>
+            
+              <p></p>
+              <div class="submitResetButton">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+              </div>
+            </div>
+            </form>
+    </main>
+    <p></p>
+    <footer>
+      <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/include.js"></script>
+</body>
+</html>

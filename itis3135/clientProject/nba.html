@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Mudani's Jacked Mammoth || ITIS 3135 || Client Project NBA</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <hr>
+            <h2>NBA</h2>
+
+            <div class="ssNba">
+
+                <div class="slidesNba">
+                    <div class="numbertext"></div>
+                    <img class="ssImg" src="images/nba.jpeg">
+                </div>
+        
+                <div class="slidesNba">
+                    <div class="numbertext"></div>
+                    <img class="ssImg" src="images/mjDunk.avif">
+                </div>
+        
+                <div class="slidesNba">
+                    <div class="numbertext"></div>
+                    <img class="ssImg" src="images/kobeIconic.webp">
+                </div>
+        
+                <div class="slidesNba">
+                    <div class="numbertext"></div>
+                    <img class="ssImg" src="images/2016Finals.jpg">
+                </div>
+        
+                <div class="slidesNba">
+                    <div class="numbertext"></div>
+                    <img class="ssImg" src="images/kdFinals.jpeg">
+                </div>
+        
+                <div class="slidesNba">
+                    <div class="numbertext"></div>
+                    <img class="ssImg" src="images/kawhiBB.webp">
+                </div>
+        
+                <a class="prev" onclick="nextSlides(-1)">&#10094;</a>
+                <a class="next" onclick="nextSlides(1)">&#10095;</a>
+        
+                <div class="caption-ssNba">
+                    <p id="caption"></p>
+                </div>
+        
+                <div class="displays">
+                    <div class="display">
+                        <img class="demo cursor" src="images/nba.jpeg" onclick="currentSlide(1)" alt="NBA" width="100" height="100">
+                    </div>
+                    <div class="display">
+                        <img class="demo cursor" src="images/mjDunk.avif" onclick="currentSlide(2)" alt="MJ's Iconic Dunk" width="100" height="100">
+                    </div>
+                    <div class="display">
+                        <img class="demo cursor" src="images/kobeIconic.webp" onclick="currentSlide(3)" alt="Kobe Iconic Finals Photo" width="100" height="100">
+                    </div>
+                    <div class="display">
+                        <img class="demo cursor" src="images/2016Finals.jpg" onclick="currentSlide(4)" alt="2016 NBA Finals" width="100" height="100">
+                    </div>
+                    <div class="display">
+                        <img class="demo cursor" src="images/kdFinals.jpeg" onclick="currentSlide(5)" alt="KD Finals MVP" width="100" height="100">
+                    </div>
+                    <div class="display">
+                        <img class="demo cursor" src="images/kawhiBB.webp" onclick="currentSlide(6)" alt="Kawhi NBA Final Buzzer Beater" width="100" height="100">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="nbaInfo">
+                <h3><a class=nbaSSHeader3 href="https://www.nba.com/">National Basketball Association</a></h3>
+                <p>The National Basketball Association (NBA) is a professional basketball league in North America, widely regarded as one of the premier basketball leagues globally.</p>
+                <p>Established in 1946, the NBA features 30 teams, divided into two conferences (Eastern and Western), each further divided into three divisions. Known for its high level of competition, the league attracts top basketball talent from around the world, with teams competing in a regular season followed by playoffs to determine the annual NBA champion.</p>
+                <p>The NBA season typically runs from October to April, with each team playing 82 regular-season games. The top eight teams from each conference advance to the playoffs, a series of elimination rounds culminating in the NBA Finals, where the champions of the Eastern and Western Conferences face off in a best-of-seven series. .</p>
+                <p>The NBA's influence extends beyond sports, with a significant impact on pop culture and fashion, making it a prominent and dynamic force in the world of professional sports.</p>
+            </div>
+
+            <br>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/slideshow.js"></script>
+</body>
+</html>

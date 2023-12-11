@@ -296,3 +296,13 @@ textarea{
 .demo:hover {
     opacity: 1;
 }
+/*Test*/
+.accordion
+{
+    padding: 14px;
+    cursor: pointer;
+    background-color: #808000;
+    text-align: center;
+    outline: none;
+    transition: 0.5s;
+}
